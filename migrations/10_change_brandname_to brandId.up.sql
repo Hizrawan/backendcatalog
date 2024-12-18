@@ -1,0 +1,7 @@
+ALTER TABLE phones
+ADD COLUMN brand_id INT FIRST,
+ADD CONSTRAINT fk_brand
+FOREIGN KEY (brand_id) REFERENCES brands(id);
+
+ALTER TABLE phones
+DROP COLUMN brand;
