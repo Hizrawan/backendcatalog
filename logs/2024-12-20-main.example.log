@@ -1,0 +1,142 @@
+2024/12/20 11:18:16 [Error] unprocessable entity
+ at C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/modules/logger/logger.go:86 
+
+[StackTrace]:
+github.com/xinchuantw/hoki-tabloid-backend/internal/modules/logger.Logger.Error({0xc000066eb0?}, {0xc00023c3d8, 0x14}, {0x0?, 0x10?, 0x21697c0?})
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/modules/logger/logger.go:86 +0x5e
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.Recover.func3.1.1()
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/recover.go:81 +0x3ad
+panic({0x21c1240?, 0x3594cc0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/xinchuantw/hoki-tabloid-backend/internal/controllers/auth.(*AuthAdminController).LoginByXinchuanAuth(0xc00057a088, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/controllers/auth/admin.go:39 +0x7f4
+net/http.HandlerFunc.ServeHTTP(0xc000f62000?, {0x1e659d94420?, 0xc000492c40?}, 0x2713090?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000499aa0, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0x6900000000000000?, {0x1e659d94420?, 0xc000492c40?}, 0x2?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000499aa0, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:73 +0x32f
+github.com/go-chi/chi/v5.(*Mux).Mount.func1({0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:327 +0x1bb
+net/http.HandlerFunc.ServeHTTP(0xc000f62000?, {0x1e659d94420?, 0xc000492c40?}, 0xc0003e2378?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000499a40, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0xc0000675a0?, {0x1e659d94420?, 0xc000492c40?}, 0xc000067580?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000499a40, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:73 +0x32f
+github.com/go-chi/chi/v5.(*Mux).Mount.func1({0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:327 +0x1bb
+net/http.HandlerFunc.ServeHTTP(0xc000f62000?, {0x1e659d94420?, 0xc000492c40?}, 0xc000306385?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc0000e9740, {0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0xc000067768?, {0x1e659d94420?, 0xc000492c40?}, 0x2f6e00c000067750?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.Recover.func3.1({0x1e659d94420?, 0xc000492c40?}, 0xb?)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/recover.go:92 +0x70
+net/http.HandlerFunc.ServeHTTP(0xc000306385?, {0x1e659d94420?, 0xc000492c40?}, 0xc0000677e8?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.CleanPath.func1({0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/clean_path.go:26 +0xf7
+net/http.HandlerFunc.ServeHTTP(0xc000067870?, {0x1e659d94420?, 0xc000492c40?}, 0xc000067870?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.StripSlashes.func1({0x1e659d94420, 0xc000492c40}, 0xc000f74000)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/strip.go:30 +0x127
+net/http.HandlerFunc.ServeHTTP(0x3598980?, {0x1e659d94420?, 0xc000492c40?}, 0x10?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.init.0.RequestLogger.func1.1({0x273e080, 0xc000f090c8}, 0xc000380500)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/logger.go:55 +0x154
+net/http.HandlerFunc.ServeHTTP(0xc0000f40a0?, {0x273e080?, 0xc000f090c8?}, 0xc000380500?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/cors.(*Cors).Handler-fm.(*Cors).Handler.func1({0x273e080, 0xc000f090c8}, 0xc000380500)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228 +0x17e
+net/http.HandlerFunc.ServeHTTP(0xf75833?, {0x273e080?, 0xc000f090c8?}, 0xc000067a20?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.MetricsMiddleware.func1.1({0x273e860, 0xc0005302a0}, 0xc000380500)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/metrics.go:56 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x2740c30?, {0x273e860?, 0xc0005302a0?}, 0x3594080?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc0000e9740, {0x273e860, 0xc0005302a0}, 0xc0003803c0)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:90 +0x2ee
+net/http.serverHandler.ServeHTTP({0x2739858?}, {0x273e860?, 0xc0005302a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0005765a0, {0x2740bf8, 0xc0002368a0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 28
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+
+2024/12/20 14:31:19 [Error] unprocessable entity
+ at C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/modules/logger/logger.go:86 
+
+[StackTrace]:
+github.com/xinchuantw/hoki-tabloid-backend/internal/modules/logger.Logger.Error({0xc000066eb0?}, {0xc00023c018, 0x14}, {0x0?, 0x10?, 0x21697c0?})
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/modules/logger/logger.go:86 +0x5e
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.Recover.func3.1.1()
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/recover.go:81 +0x3ad
+panic({0x21c1240?, 0x3594cc0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/xinchuantw/hoki-tabloid-backend/internal/controllers/auth.(*AuthAdminController).LoginByXinchuanAuth(0xc00057a088, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/controllers/auth/admin.go:39 +0x7f4
+net/http.HandlerFunc.ServeHTTP(0xc000164870?, {0x1e659d94420?, 0xc0000f24c0?}, 0x2713090?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000499aa0, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0x6300000000000000?, {0x1e659d94420?, 0xc0000f24c0?}, 0x2?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000499aa0, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:73 +0x32f
+github.com/go-chi/chi/v5.(*Mux).Mount.func1({0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:327 +0x1bb
+net/http.HandlerFunc.ServeHTTP(0xc000164870?, {0x1e659d94420?, 0xc0000f24c0?}, 0xc0010a2078?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000499a40, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0xc0000675a0?, {0x1e659d94420?, 0xc0000f24c0?}, 0xc000067580?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000499a40, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:73 +0x32f
+github.com/go-chi/chi/v5.(*Mux).Mount.func1({0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:327 +0x1bb
+net/http.HandlerFunc.ServeHTTP(0xc000164870?, {0x1e659d94420?, 0xc0000f24c0?}, 0xc00041c045?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc0000e9740, {0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:480 +0x2e2
+net/http.HandlerFunc.ServeHTTP(0xc000067768?, {0x1e659d94420?, 0xc0000f24c0?}, 0x2f6e00000259f938?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.Recover.func3.1({0x1e659d94420?, 0xc0000f24c0?}, 0xb?)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/recover.go:92 +0x70
+net/http.HandlerFunc.ServeHTTP(0xc00041c045?, {0x1e659d94420?, 0xc0000f24c0?}, 0xc0000677e8?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.CleanPath.func1({0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/clean_path.go:26 +0xf7
+net/http.HandlerFunc.ServeHTTP(0xc000067870?, {0x1e659d94420?, 0xc0000f24c0?}, 0xc000067870?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.StripSlashes.func1({0x1e659d94420, 0xc0000f24c0}, 0xc000130780)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/strip.go:30 +0x127
+net/http.HandlerFunc.ServeHTTP(0x3598980?, {0x1e659d94420?, 0xc0000f24c0?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5/middleware.init.0.RequestLogger.func1.1({0x273e080, 0xc00163e0a8}, 0xc000130640)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/middleware/logger.go:55 +0x154
+net/http.HandlerFunc.ServeHTTP(0xc0000f40a0?, {0x273e080?, 0xc00163e0a8?}, 0xc000130640?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/cors.(*Cors).Handler-fm.(*Cors).Handler.func1({0x273e080, 0xc00163e0a8}, 0xc000130640)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/cors@v1.2.1/cors.go:228 +0x17e
+net/http.HandlerFunc.ServeHTTP(0xf75833?, {0x273e080?, 0xc00163e0a8?}, 0x22cdec0?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/xinchuantw/hoki-tabloid-backend/internal/server.NewWithConfig.MetricsMiddleware.func1.1({0x273e860, 0xc0000ba1c0}, 0xc000130640)
+	C:/Users/xinchuan99/Documents/Xinchuan/hokishop-tabloid-backend/internal/middlewares/metrics.go:56 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x2740c30?, {0x273e860?, 0xc0000ba1c0?}, 0x3594080?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc0000e9740, {0x273e860, 0xc0000ba1c0}, 0xc0005483c0)
+	C:/Users/xinchuan99/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.0/mux.go:90 +0x2ee
+net/http.serverHandler.ServeHTTP({0x2739858?}, {0x273e860?, 0xc0000ba1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0005765a0, {0x2740bf8, 0xc0002368a0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 28
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+
